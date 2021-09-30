@@ -1,0 +1,61 @@
+canvas{
+    margin-top: 40px;
+    animation-name: glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes glow{
+    from {box-shadow: 1px 1px 38px red}
+    to {box-shadow: 1px 1px 38px yellow}
+}
+
+.button {
+    animation: animated_div 5s 1;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: animated_div;
+    -moz-animation: animated_div 5s 1;
+    -webkit-animation: animated_div 5s 1;
+    -o-animation: animated_div 5s 1;
+}
+
+@keyframes animated_div{
+    0% {
+        transform: rotate(
+    0deg);
+        left: 0px;
+    }
+    25% {
+        transform: rotate(
+    20deg);
+        left: 0px;
+    }
+    50% {
+        transform: rotate(
+    0deg);
+        left: 500px;
+    }
+    55% {
+        transform: rotate(
+    0deg);
+        left: 500px;
+    }
+    70% {
+        transform: rotate(
+    0deg);
+        left: 500px;
+        
+    }
+    100% {
+        transform: rotate(
+    -360deg);
+        left: 0px;
+    }
+}
